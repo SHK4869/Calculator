@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="BStart">Start</string>
+    <string name="BStop">Stop</string>
+    <string name="Text">Hey There</string>
+    <string name="Edit">Type something here...</string>
+    <string name="Button">Send</string>
+    <string name="B0">0</string>
+    <string name="B1">1</string>
+    <string name="B2">2</string>
+    <string name="B3">3</string>
+    <string name="B4">4</string>
+    <string name="B5">5</string>
+    <string name="B6">6</string>
+    <string name="B7">7</string>
+    <string name="B8">8</string>
+    <string name="B9">9</string>
+    <string name="BClear">Clear</string>
+    <string name="BA">+</string>
+    <string name="BS">-</string>
+    <string name="BM">*</string>
+    <string name="BD">/</string>
+    <string name="B0E">=</string>
+
+
+
+
+</resources>

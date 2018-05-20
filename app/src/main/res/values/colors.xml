@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#b2aeae</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#ffffff</color>
+    <color name="background_material_light">#60b6d8</color>
+    <color name="holo_blue_bright">#ff0095</color>
+    <color name="holo_purple">#e91e63</color>
+    <color name="foreground_material_light">#f3efef</color>
+    <color name="accent_material_light">#154343</color>
+    <color name="primary_material_light">#ca5f5f</color>
+    <color name="primary_dark_material_light">#757575</color>
+</resources>
