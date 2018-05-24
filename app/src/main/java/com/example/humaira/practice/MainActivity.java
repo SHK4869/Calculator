@@ -137,6 +137,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 compute(); //previous operator will get applied
                 ACTION = EQ;
+                Log.d("HUMAIRA:","IN SETTEXT OF EQ"+String.valueOf(val1) );
                 res.setText("= "+new Double(val1).toString()); //
                 cal.setText("");
                 val2 = 0.0;
@@ -194,15 +195,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-      /*  mod.setOnClickListener(new View.OnClickListener() {
+       mod.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 compute();
                 ACTION = MOD;
+                Log.d("HUMAIRA:","IN SETTEXT OF MOD"+String.valueOf(val1) );
                 res.setText(String.valueOf(val1)+MOD);
                 cal.setText("");
             }
-        });*/
+        });
 
         pow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -244,13 +246,14 @@ public class MainActivity extends AppCompatActivity {
                     if(val2!=0)
                         val1 = val1 / val2;
                     break;
-                /*case MOD:
+                case MOD:
                     if(val2!=0)
 
                         Log.d("HUMAIRA: ",new Double(val1).toString());
                         Log.d("HUMAIRA: ",new Double(val2).toString());
-                        val1 = (val1 / val2) * 100;
-                    Log.d("HUMAIRA: ","="+String.valueOf(val1));*/
+                        val1 = val1 % val2 ;
+                    Log.d("HUMAIRA: ","="+String.valueOf(val1));
+                    break;
                 case POWER:
                     val1 = Math.pow(val1,val2);
                     break;
@@ -287,7 +290,7 @@ public class MainActivity extends AppCompatActivity {
         clear = (Button)findViewById(R.id.clr);
         cal = (TextView)findViewById(R.id.screen);
         res = (TextView)findViewById(R.id.result);
-        //mod = (Button)findViewById(R.id.mod);
+        mod = (Button)findViewById(R.id.mod);
         pow = (Button)findViewById(R.id.power);
         dot = (Button)findViewById(R.id.dot);
 
