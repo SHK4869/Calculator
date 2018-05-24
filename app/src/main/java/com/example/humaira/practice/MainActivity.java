@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     private static final String MULTIPLICATION = "*" ;
     private static final String DIVISION = "/" ;
     private static final String EQ = "=";
+    private static final String MOD = "%" ;
+    private static final String POWER = "^";
+
     private String ACTION;
     Button one;
     Button two;
@@ -35,6 +38,9 @@ public class MainActivity extends AppCompatActivity {
     Button mul;
     Button div;
     Button eq;
+    Button mod;
+    Button pow;
+    Button dot;
     Button clear;
     TextView cal;
     TextView res;
@@ -119,12 +125,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        dot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                cal.setText(cal.getText()+".");
+            }
+        });
+
         eq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 compute(); //previous operator will get applied
                 ACTION = EQ;
-                res.setText("= "+String.valueOf(val1)); //
+                res.setText("= "+new Double(val1).toString()); //
                 cal.setText("");
                 val2 = 0.0;
             }
@@ -181,6 +194,26 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+      /*  mod.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                compute();
+                ACTION = MOD;
+                res.setText(String.valueOf(val1)+MOD);
+                cal.setText("");
+            }
+        });*/
+
+        pow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                compute();
+                ACTION = POWER;
+                res.setText(String.valueOf(val1)+POWER);
+                cal.setText("");
+            }
+        });
+
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -210,6 +243,16 @@ public class MainActivity extends AppCompatActivity {
                 case DIVISION:
                     if(val2!=0)
                         val1 = val1 / val2;
+                    break;
+                /*case MOD:
+                    if(val2!=0)
+
+                        Log.d("HUMAIRA: ",new Double(val1).toString());
+                        Log.d("HUMAIRA: ",new Double(val2).toString());
+                        val1 = (val1 / val2) * 100;
+                    Log.d("HUMAIRA: ","="+String.valueOf(val1));*/
+                case POWER:
+                    val1 = Math.pow(val1,val2);
                     break;
                 case EQ:
                     break;
@@ -244,6 +287,9 @@ public class MainActivity extends AppCompatActivity {
         clear = (Button)findViewById(R.id.clr);
         cal = (TextView)findViewById(R.id.screen);
         res = (TextView)findViewById(R.id.result);
+        //mod = (Button)findViewById(R.id.mod);
+        pow = (Button)findViewById(R.id.power);
+        dot = (Button)findViewById(R.id.dot);
 
     }
     /*

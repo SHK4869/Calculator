@@ -155,15 +155,25 @@
     <Button
         android:id="@+id/plus"
         android:layout_width="wrap_content"
-        android:layout_height="74dp"
+        android:layout_height="148dp"
         android:layout_alignTop="@+id/B9"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="172dp"
         android:layout_toEndOf="@+id/B4"
         android:layout_toRightOf="@+id/B4"
         android:background="@color/holo_purple"
         android:text="@string/BA"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        app:layout_constraintBaseline_toBaselineOf="@+id/B7"
-        app:layout_constraintStart_toEndOf="@+id/B7" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.942"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.004" />
 
     <Button
         android:id="@+id/B8"
@@ -180,33 +190,34 @@
 
     <TextView
         android:id="@+id/screen"
-        android:layout_width="356dp"
-        android:layout_height="109dp"
+        android:layout_width="359dp"
+        android:layout_height="48dp"
         android:layout_alignEnd="@+id/B1"
         android:layout_alignParentTop="true"
         android:layout_alignRight="@+id/B1"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/result"
-        android:layout_width="357dp"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:layout_alignTop="@+id/screen"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         android:layout_toEndOf="@+id/B1"
         android:layout_toRightOf="@+id/B1"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.288" />
+        app:layout_constraintVertical_bias="0.133" />
 
     <Button
         android:id="@+id/B3"
@@ -290,5 +301,47 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.966" />
+
+    <!-- <Button
+        android:id="@+id/mod"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/holo_purple"
+        android:text="@string/B0Mod"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />-->
+
+    <Button
+        android:id="@+id/dot"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="172dp"
+        android:background="@color/holo_purple"
+        android:text="@string/B0Dot"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.003" />
+
+    <Button
+        android:id="@+id/power"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:background="@color/holo_purple"
+        android:text="@string/B0P"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/dot"
+        app:layout_constraintStart_toEndOf="@+id/dot" />
 
 </android.support.constraint.ConstraintLayout>

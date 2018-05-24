@@ -21,6 +21,9 @@
     <string name="BM">*</string>
     <string name="BD">/</string>
     <string name="B0E">=</string>
+    <string name="B0P">^</string>
+    <string name="B0Mod">%</string>
+    <string name="B0Dot">.</string>
 
 
 
